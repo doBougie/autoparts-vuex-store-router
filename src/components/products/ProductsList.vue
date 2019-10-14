@@ -21,11 +21,23 @@
             >
               Editer ce produit
             </router-link>
+            <router-link
+              class="button is-danger"
+              :to="{ name: 'product-delete'}"
+            >
+              Delete
+            </router-link>
 
           </td>
         </tr>
       </tbody>
     </table>
+    <router-link
+      class="button is-primary"
+      :to="{ name: 'product-add' }"
+    >
+      Ajouter
+    </router-link>
   </div>
 </template>
 
